@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+/*
+===========================
+building the two separate 
+column
+===========================
+*/
+
+.main-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.main-container .left-side {
+    position: relative;
+    background: rgb(248, 216, 216);
+    padding: 40px;
+
+}
+
+.main-container .right-side {
+    position: relative;
+    background: brown;
+    padding: 40px;
+
+}
+
+.profile .image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.profile h1 {
+    color: wheat;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    padding-top: 1rem;
+}
+
+.profile p {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: wheat;
+}
+
+.contact {
+    padding-top: 0;
+
+}
+
+.contact ul {
+    position: relative;
+}
+
+.contact ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+}
+
+.education {
+    margin-bottom: 15px;
+}
+
+.education h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.education h5 {
+    color: wheat;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.education h4 {
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.education h6 {
+    font-weight: 500;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+.Languages .title {
+    padding-bottom: 10px;
+
+}
+
+.title2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: brown;
+
+}
+
+p {
+    padding-bottom: 50px;
+}
+
+.work .box {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.work .title2 {
+    margin-bottom: 15px;
+}
+
+.work .box .company {
+    min-width: 150px;
+}
+
+.work .box .company h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.work .box .company h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.work .box .text h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(136, 43, 43);
+}
+
+.work .box .text h5 {
+    padding-bottom: 25px;
+}
+
+.skill .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill .title2 {
+    padding-top: 40px;
+}
+
+.skill .box ol {
+    padding-top: 15px;
+    margin: 15px;
+}
+
+.skill .box label {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.interest .title2 {
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+
+.interest .list ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20px;
+}

@@ -6,7 +6,6 @@
 
 body {
     background: pink;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -30,6 +29,7 @@ column
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
+    margin-left: 300px;
 
 
 }
@@ -263,16 +263,14 @@ p {
 footer
 ======================
 */
-.page-footer {
+
+footer {
     height: 4rem;
     color: white;
-    display: flex;
     text-align: center;
     background: black;
     align-items: center;
     justify-content: center;
-    display: 1fr;
-
 }
 
 .page-footer p {
